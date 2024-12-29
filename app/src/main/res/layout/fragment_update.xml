@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/child_fragment_padding"
+    tools:context=".fragments.update.UpdateFragment">
+
+    <EditText
+        android:id="@+id/current_title_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/title"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="@dimen/child_fragment_padding"
+        android:paddingEnd="@dimen/child_fragment_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/current_priority_spinner"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/add_fragment_margin_top"
+        android:background="@drawable/edit_text_background"
+        android:entries="@array/priorities"
+        android:paddingStart="16dp"
+        android:paddingEnd="@dimen/child_fragment_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_title_edit_text" />
+
+    <EditText
+        android:id="@+id/current_description_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/add_fragment_margin_top"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:paddingStart="@dimen/child_fragment_padding"
+        android:paddingTop="16dp"
+        android:paddingEnd="@dimen/child_fragment_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_priority_spinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>

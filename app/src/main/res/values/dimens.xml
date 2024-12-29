@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_button_margin">24dp</dimen>
+    <dimen name="button_size">48dp</dimen>
+    <dimen name="child_fragment_padding">24dp</dimen>
+    <dimen name="add_fragment_margin_top">8dp</dimen>
+</resources>
